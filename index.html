@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jawwad Mohammed | AI/ML Leadership Portfolio</title>
+    <title>Jawwad Mohammed | AI/ML Portfolio</title>
     <style>
         :root {
             --primary: #1e3a8a;
@@ -14,163 +14,35 @@
             --border: #e5e7eb;
             --accent: #2563eb;
         }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            color: var(--text-dark);
-            background-color: #ffffff;
-            line-height: 1.6;
-            padding-bottom: 60px;
-        }
-
-        header {
-            background-color: var(--primary);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            font-weight: 700;
-        }
-
-        header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        section {
-            margin-bottom: 50px;
-        }
-
-        h2 {
-            font-size: 1.75rem;
-            color: var(--primary);
-            border-bottom: 2px solid var(--primary-light);
-            padding-bottom: 8px;
-            margin-bottom: 24px;
-        }
-
-        .philosophy-box {
-            background-color: var(--primary-light);
-            border-left: 4px solid var(--accent);
-            padding: 20px;
-            border-radius: 4px;
-            font-style: italic;
-            margin-bottom: 30px;
-            color: var(--text-dark);
-        }
-
-        /* Timeline Styling */
-        .timeline {
-            position: relative;
-            margin: 30px 0;
-            padding-left: 30px;
-            border-left: 2px solid var(--border);
-        }
-
-        .timeline-event {
-            position: relative;
-            margin-bottom: 30px;
-        }
-
-        .timeline-event::before {
-            content: '';
-            position: absolute;
-            left: -36px;
-            top: 5px;
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background-color: var(--accent);
-            border: 2px solid white;
-        }
-
-        .timeline-time {
-            font-weight: bold;
-            color: var(--accent);
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            margin-bottom: 4px;
-        }
-
-        .timeline-title {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: var(--text-dark);
-            margin-bottom: 6px;
-        }
-
-        /* Grid/List Lifecycle Layout */
-        .lifecycle-steps {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        @media (min-width: 600px) {
-            .lifecycle-steps {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-
-        .step-card {
-            background: var(--bg-light);
-            border: 1px solid var(--border);
-            padding: 20px;
-            border-radius: 6px;
-        }
-
-        .step-card h3 {
-            font-size: 1.1rem;
-            color: var(--primary);
-            margin-bottom: 8px;
-        }
-
-        /* Reflection Styling */
-        .blockquote-reflection {
-            background: #f3f4f6;
-            border-radius: 8px;
-            padding: 24px;
-            border-left: 4px solid #9ca3af;
-        }
-
-        .blockquote-reflection p {
-            margin-bottom: 16px;
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; color: var(--text-dark); background-color: #ffffff; line-height: 1.6; }
         
-        .blockquote-reflection p:last-child {
-            margin-bottom: 0;
-        }
+        /* Navigation Style */
+        nav { background-color: #111827; padding: 15px 20px; text-align: center; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: 500; font-size: 0.95rem; }
+        nav a:hover, nav a.active { color: #60a5fa; }
 
-        footer {
-            text-align: center;
-            padding: 30px 20px;
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            border-top: 1px solid var(--border);
-            margin-top: 40px;
-        }
+        header { background-color: var(--primary); color: white; padding: 40px 20px; text-align: center; }
+        header h1 { font-size: 2.2rem; margin-bottom: 5px; }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        section { margin-bottom: 40px; }
+        h2 { font-size: 1.6rem; color: var(--primary); border-bottom: 2px solid var(--primary-light); padding-bottom: 8px; margin-bottom: 20px; }
+        .philosophy-box { background-color: var(--primary-light); border-left: 4px solid var(--accent); padding: 20px; border-radius: 4px; font-style: italic; margin-bottom: 30px; }
+        
+        .lifecycle-steps { display: grid; grid-template-columns: 1fr; gap: 20px; margin-top: 20px; }
+        @media (min-width: 600px) { .lifecycle-steps { grid-template-columns: 1fr 1fr; } }
+        .step-card { background: var(--bg-light); border: 1px solid var(--border); padding: 20px; border-radius: 6px; }
+        .step-card h3 { font-size: 1.1rem; color: var(--primary); margin-bottom: 8px; }
+        footer { text-align: center; padding: 30px 20px; font-size: 0.9rem; color: var(--text-muted); border-top: 1px solid var(--border); margin-top: 40px; }
     </style>
 </head>
 <body>
+
+    <nav>
+        <a href="index.html" class="active">Home / Framework</a>
+        <a href="timeline.html">Strategic Timeline</a>
+        <a href="reflection.html">Leadership Reflection</a>
+    </nav>
 
     <header>
         <h1>Jawwad Mohammed</h1>
@@ -178,8 +50,6 @@
     </header>
 
     <div class="container">
-        
-        <!-- Profile / Meta Info -->
         <section id="profile">
             <div class="philosophy-box">
                 “Technology must be measured not just by whether it works, but by how it affects people. True AI leadership bridges technical execution with ethical accountability and transparent communication.”[cite: 1]
@@ -187,36 +57,11 @@
             <p><strong>Academic Foundation:</strong> Master's Student in Artificial Intelligence (Indiana Wesleyan University) | Bachelor's Degree in Information Technology[cite: 1].</p>
         </section>
 
-        <!-- Artifact Section -->
         <section id="artifact">
             <h2>Artifact #1: Leadership Development & AI Integration Framework</h2>
             <p>This artifact establishes a baseline assessment of current leadership competencies and outlines a structural roadmap for bridging technical execution gaps. It synthesizes a personal change-management philosophy with the rigorous lifecycle required to take an AI/ML concept into production[cite: 1].</p>
-            
-            <div class="timeline">
-                <div class="timeline-event">
-                    <div class="timeline-time">Current Phase</div>
-                    <div class="timeline-title">Academic & Theoretical Foundation</div>
-                    <p>Pursuing an MS in Artificial Intelligence at Indiana Wesleyan University[cite: 1]. Focusing on foundational AI/ML principles, cloud computing integration, and generative AI systems[cite: 1].</p>
-                </div>
-                <div class="timeline-event">
-                    <div class="timeline-time">Next Phase</div>
-                    <div class="timeline-title">Technical Skill Deep-Dive</div>
-                    <p>Targeting key improvement areas in data requirements, model evaluation metrics, and end-to-end cloud-to-edge deployment lifecycles[cite: 1].</p>
-                </div>
-                <div class="timeline-event">
-                    <div class="timeline-time">Mid-Term Goal</div>
-                    <div class="timeline-title">Community & Workshop Advocacy</div>
-                    <p>Launching practical, beginner-friendly AI awareness workshops for students and corporate professionals, focusing on making AI accessible and structurally transparent[cite: 1].</p>
-                </div>
-                <div class="timeline-event">
-                    <div class="timeline-time">Long-Term Vision</div>
-                    <div class="timeline-title">Ethical AI Professional Deployment</div>
-                    <p>Transitioning into a dedicated AI/ML leadership role in the United States, driving business innovation through responsible, human-centric AI adoption strategies[cite: 1].</p>
-                </div>
-            </div>
         </section>
 
-        <!-- Framework Section -->
         <section id="lifecycle">
             <h2>The AI Lifecycle for Leaders</h2>
             <p>To address self-identified growth areas in adoption strategy, project management, and technical execution, this operational sequence guides projects systematically[cite: 1]:</p>
@@ -240,17 +85,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- Reflection Section -->
-        <section id="reflection">
-            <h2>Required Reflection</h2>
-            <div class="blockquote-reflection">
-                <p><strong>How do my current strengths and weaknesses shape my approach to change leadership?</strong></p>
-                <p>Leadership is a skill mastered over time, and this framework serves as a springboard rather than a final evaluation[cite: 1]. My top strengths—客观 alignment, stakeholder communication, ethical AI advocacy, critical thinking, and lifelong learning—ensure that I naturally view technology as a tool to support people rather than replace them[cite: 1]. I firmly believe that effective change leaders must articulate both the "what" and the "why" of technological shifts to guide teams through uncertainty[cite: 1].</p>
-                <p>However, an inspiring vision is insufficient if the rollout strategy is unclear[cite: 1]. Recognizing my current gaps in technical execution, project budgeting, and model evaluation allows me to approach development with humility[cite: 1]. By treating these gaps not as weaknesses, but as targeted milestones, I am building the precise technical grasp needed to accurately measure whether an AI tool has genuinely improved an organization[cite: 1].</p>
-            </div>
-        </section>
-
     </div>
 
     <footer>

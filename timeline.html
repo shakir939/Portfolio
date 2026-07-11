@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategic Timeline | Jawwad Mohammed</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-light: #eff6ff;
+            --text-dark: #1f2937;
+            --text-muted: #4b5563;
+            --border: #e5e7eb;
+            --accent: #2563eb;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; color: var(--text-dark); }
+        
+        nav { background-color: #111827; padding: 15px 20px; text-align: center; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: 500; font-size: 0.95rem; }
+        nav a:hover { color: #60a5fa; }
+        .active { color: #60a5fa !important; }
+
+        header { background-color: var(--primary); color: white; padding: 40px 20px; text-align: center; }
+        header h1 { font-size: 2.2rem; margin-bottom: 5px; }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        
+        /* Timeline Styling */
+        .timeline { position: relative; margin: 30px 0; padding-left: 30px; border-left: 2px solid var(--border); }
+        .timeline-event { position: relative; margin-bottom: 40px; }
+        .timeline-event::before { content: ''; position: absolute; left: -36px; top: 5px; width: 10px; height: 10px; border-radius: 50%; background-color: var(--accent); border: 2px solid white; }
+        .timeline-time { font-weight: bold; color: var(--accent); font-size: 0.9rem; text-transform: uppercase; margin-bottom: 4px; }
+        .timeline-title { font-size: 1.2rem; font-weight: 600; color: var(--text-dark); margin-bottom: 6px; }
+        footer { text-align: center; padding: 30px 20px; font-size: 0.9rem; color: var(--text-muted); border-top: 1px solid var(--border); margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home / Framework</a>
+        <a href="timeline.html" class="active">Strategic Timeline</a>
+        <a href="reflection.html">Leadership Reflection</a>
+    </nav>
+
+    <header>
+        <h1>Strategic Growth Roadmap</h1>
+        <p>Academic & Professional Milestones</p>
+    </header>
+
+    <div class="container">
+        <div class="timeline">
+            <div class="timeline-event">
+                <div class="timeline-time">Current Phase</div>
+                <div class="timeline-title">Academic & Theoretical Foundation</div>
+                <p>Pursuing an MS in Artificial Intelligence at Indiana Wesleyan University[cite: 1]. Focusing on foundational AI/ML principles, cloud computing integration, and generative AI systems[cite: 1].</p>
+            </div>
+            <div class="timeline-event">
+                <div class="timeline-time">Next Phase</div>
+                <div class="timeline-title">Technical Skill Deep-Dive</div>
+                <p>Targeting key improvement areas in data requirements, model evaluation metrics, and end-to-end cloud-to-edge deployment lifecycles[cite: 1].</p>
+            </div>
+            <div class="timeline-event">
+                <div class="timeline-time">Mid-Term Goal</div>
+                <div class="timeline-title">Community & Workshop Advocacy</div>
+                <p>Launching practical, beginner-friendly AI awareness workshops for students and corporate professionals, focusing on making AI accessible and structurally transparent[cite: 1].</p>
+            </div>
+            <div class="timeline-event">
+                <div class="timeline-time">Long-Term Vision</div>
+                <div class="timeline-title">Ethical AI Professional Deployment</div>
+                <p>Transitioning into a dedicated AI/ML leadership role in the United States, driving business innovation through responsible, human-centric AI adoption strategies[cite: 1].</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Jawwad Mohammed. Built for GitHub Pages Portfolio.</p>
+    </footer>
+
+</body>
+</html>
